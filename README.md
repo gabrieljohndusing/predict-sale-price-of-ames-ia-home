@@ -12,24 +12,24 @@ In this report, we construct several model to predict the sale price of an Ames,
 Our work is split into two notebooks. The notebooks and contents are listed below:
 
 - `eda_and_data_cleaning`
- - Data cleaning for train data
-  - Identify and fix missing rows (imputation or removal)
-  - Identify and fix outliers
-  - Identify and remove (categorical) features that are heavily skewed in a single value
- - Data exploration for training data
-  - Plot distribution of categorical values
-  - Plot relationship between numerical values and `saleprice` 
- - Data cleaning for test data
-  - Impute missing data 
+  - Data cleaning for train data
+    - Identify and fix missing rows (imputation or removal)
+    - Identify and fix outliers
+    - Identify and remove (categorical) features that are heavily skewed in a single value
+  - Data exploration for training data
+    - Plot distribution of categorical values
+    - Plot relationship between numerical values and `saleprice`
+  - Data cleaning for test data
+    - Impute missing data
 - `modeling`
- - Preprocessing takes place here
-  - Column transformer was used to scale and one-hot encode data
- - Fit the following models:
-  - Linear Regression
-  - k-Nearest Neigbors Regressor (KNN)
-  - Ridge ($L^2$-norm)
-  - LASSO ($L^1$-norm)
- - Grid search to optimize KNN and LASSO hyperparameters
+  - Preprocessing takes place here
+    - Column transformer was used to scale and one-hot encode data
+  - Fit the following models:
+    - Linear Regression
+    - k-Nearest Neigbors Regressor (KNN)
+    - Ridge ($L^2$-norm)
+    - LASSO ($L^1$-norm)
+  - Grid search to optimize KNN and LASSO hyperparameters
 
 ## Datasets and Data Dictionary
 
